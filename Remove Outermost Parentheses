@@ -1,0 +1,17 @@
+string removeOuterParentheses(string s) {
+    int count = 0;
+    string ans = "";
+    
+    for (int i = 0; i < s.length(); i++) {
+        // When encountering a closing parenthesis ')', we first decrement count.
+        if (s[i] == ')') count--;
+        
+        // Only add characters when count is non-zero, ignoring the outermost pair.
+        if (count != 0) ans.push_back(s[i]);
+        
+        // When encountering an opening parenthesis '(', we increment count after processing.
+        if (s[i] == '(') count++;
+    }
+    
+    return ans;
+}
