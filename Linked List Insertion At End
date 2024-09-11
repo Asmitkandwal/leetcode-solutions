@@ -1,0 +1,32 @@
+class Solution {
+  public:
+    Node *insertAtEnd(Node *head, int x) {
+         Node* s = (Node*)malloc(sizeof(Node));
+        
+        // Check if memory allocation was successful
+        if (s == NULL) {
+            cout << "Memory allocation failed!" << endl;
+            return head;
+        }
+
+    
+        s->data = x;
+        s->next = NULL;
+
+    
+        if (head == NULL) {
+            return s;
+        }
+
+        // Traverse to the end of the list
+        Node* temp = head;
+        while (temp->next != NULL) {
+            temp = temp->next;
+        }
+
+    
+        temp->next = s;
+
+        return head;
+    }
+};
