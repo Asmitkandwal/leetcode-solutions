@@ -1,0 +1,29 @@
+class Solution
+{
+    public:
+    //Function to return list containing first n fibonacci numbers.
+    vector<long long> printFibb(int n) 
+    {
+        vector<long long> fib;
+        long long  f = 1 , s = 1;
+        if(n<=0){
+            return  fib;
+        }
+        
+        fib.push_back(f);
+        if(n==1){
+            return fib;
+        }
+        
+        fib.push_back(s);
+        
+        for(int i = 3;i<=n;i++){
+            long long  sum = f + s;
+            fib.push_back(sum);
+            f = s;
+            s = sum;
+        }
+        return fib;
+        }
+
+};
