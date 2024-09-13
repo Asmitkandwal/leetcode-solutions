@@ -1,0 +1,49 @@
+class Solution {
+public:
+    vector<int> searchRange(vector<int>& nums, int target) {
+        vector<int> ret;
+        int e = -1, f = -1;
+        
+        if (nums.size() == 1) {
+            for (int i = 0; i < nums.size(); i++) {
+                if (nums[i] == target) {
+                    f = i;
+                    break;
+                }
+            }
+            
+            if (f != -1) {
+                ret.push_back(f);
+                ret.push_back(f);
+                return ret;
+            } else {
+                ret.push_back(-1);
+                ret.push_back(-1);
+                return ret;
+            }
+        }
+        
+        for (int i = 0; i < nums.size(); i++) {
+            if (nums[i] == target) {
+                f = i;
+                break;
+            }
+        }
+        
+        for (int i = f; i < nums.size(); i++) {
+            if (nums[i] == target) {
+                e = i;
+            }
+        }
+        
+        if (f != -1 && e != -1) {
+            ret.push_back(f);
+            ret.push_back(e);
+            return ret;
+        } else {
+            ret.push_back(-1);
+            ret.push_back(-1);
+            return ret;
+        }
+    }
+};
