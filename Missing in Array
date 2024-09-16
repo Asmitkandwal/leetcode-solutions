@@ -1,0 +1,29 @@
+class Solution {
+  public:
+
+    // Note that the size of the array is n-1
+    int missingNumber(int n, vector<int>& arr) {
+      // Step 1: Calculate the sum of the first 'n' natural numbers, including 0 to n.
+    // The formula for the sum of the first 'n' numbers is n * (n + 1) / 2.
+    // For example, if n = 4, the first 5 numbers are 0, 1, 2, 3, 4, and their sum is 10.
+    int totalSum = (n * (n + 1)) / 2;
+    
+    // Step 2: Initialize a variable to store the sum of elements in the given array.
+    // This sum will help us compare the total expected sum with the sum of elements in the array.
+    int arrSum = 0;
+
+    // Step 3: Iterate through the array to calculate the sum of its elements.
+    // We're using a loop to sum up all the numbers present in the array.
+    for (int i = 0; i < arr.size(); i++) {
+        arrSum += arr[i];  // Add each element of the array to arrSum
+    }
+
+    // Step 4: Now, subtract the sum of the array from the total expected sum.
+    // The missing number will be the difference between the expected total sum and the actual array sum.
+    // For example, if the array sum is 9 and the total sum is 10, the missing number is 1.
+    int missingNum = totalSum - arrSum;
+
+    // Step 5: Return the missing number as the result of the function.
+    return missingNum;
+    }
+};
