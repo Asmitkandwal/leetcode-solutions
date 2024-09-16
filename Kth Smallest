@@ -1,0 +1,43 @@
+class Solution {
+  public:
+    // arr : given array
+    // k : find kth smallest element and return using this function
+      int partition(vector<int>& arr, int left, int right) {
+        int pivot = arr[right];
+        int i = left - 1;
+        for (int j = left; j < right; j++) {
+            if (arr[j] <= pivot) {
+                i++;
+                swap(arr[i], arr[j]);
+            }
+        }
+        swap(arr[i + 1], arr[right]);
+        return i + 1;
+    }
+
+    // Quickselect function to find the kth smallest element
+    int quickSelect(vector<int>& arr, int left, int right, int k) {
+        if (left == right) return arr[left]; // Base case: only one element
+        
+        // Partition the array and get the pivot index
+        int pivotIndex = partition(arr, left, right);
+        
+        // Determine the position of the pivot index
+        if (k == pivotIndex) {
+            return arr[k];
+        } else if (k < pivotIndex) {
+            return quickSelect(arr, left, pivotIndex - 1, k);
+        } else {
+            return quickSelect(arr, pivotIndex + 1, right, k);
+        }
+    }
+
+    // Wrapper function to use the Quickselect
+    int kthSmallest(vector<int>& arr, int k) {
+        if (k <= 0 || k > arr.size()) {
+            throw out_of_range("k is out of range");
+        }
+        return quickSelect(arr, 0, arr.size() - 1, k - 1);
+
+        // code here
+    }
