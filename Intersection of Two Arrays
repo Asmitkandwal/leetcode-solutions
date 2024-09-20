@@ -1,0 +1,50 @@
+class Solution {
+public:
+    vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
+        vector<int> common;
+       
+        for(int i = 0;i<nums1.size();i++){
+            for(int j = 0;j<nums2.size();j++){
+                if(nums1[i] == nums2[j]){
+                     int  again = 0;
+                    for(int k = 0;k<common.size();k++){
+                        if(common[k] == nums1[i]){
+                            again++;
+                            break;
+                        }
+                      
+                    }
+                    if(again == 0){
+                      common.push_back(nums1[i]);}
+                }
+            }
+        }
+        return common;
+    }
+};
+
+
+
+------------------------------------------------------------------------------------- or the another way is --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->>>>>>>>>>>>>>>
+
+#include <vector>
+#include <unordered_set>
+using namespace std;
+
+class Solution {
+public:
+    vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
+        unordered_set<int> set1(nums1.begin(), nums1.end()); // Store elements of nums1 in a set
+        unordered_set<int> common; // To store common elements
+
+        for (int num : nums2) {
+            // Check if num is in set1
+            if (set1.count(num)) {
+                common.insert(num); // Add to common set
+            }
+        }
+
+        // Convert the set to a vector
+        return vector<int>(common.begin(), common.end());
+    }
+};
