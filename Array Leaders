@@ -1,0 +1,17 @@
+class Solution {
+    // Function to find the leaders in the array.
+  public:
+    vector<int> leaders(int n, int arr[]) {
+        vector<int> val;
+        long long lead = INT_MIN;
+
+       for(int i= n-1;i>=0;i--){
+          if(arr[i]>=lead){
+              lead = arr[i];
+              val.push_back(arr[i]);
+          }
+       }
+       reverse(val.begin(),val.end());
+       return val;
+    }
+};
