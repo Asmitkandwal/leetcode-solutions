@@ -1,0 +1,21 @@
+class Solution {
+  public:
+    bool PalinArray(vector<int> &arr) {
+      
+        for(int i = 0;i<arr.size();i++){
+              int val = 0;
+        int pal = 0;
+        int rem = arr[i];
+        
+            while(rem != 0){
+                val = rem%10;
+                pal = (pal*10)+val;
+                rem = rem/10;
+            }
+            if(pal != arr[i]){
+                return false;
+            }
+        }
+        return true;
+    }
+};
