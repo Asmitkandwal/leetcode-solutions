@@ -1,7 +1,7 @@
 /*
  * Problem: 3541. Find Most Frequent Vowel and Consonant
  * Difficulty: Easy
- * Link: https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/submissions/1984985394/
+ * Link: https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/
  * Language: cpp
  * Date: 2026-04-22
  */
