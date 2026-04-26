@@ -4,9 +4,9 @@ My LeetCode solutions, automatically synced from [LeetCode](https://leetcode.com
 
 ## 📊 Statistics
 
-- **Total Problems Solved:** 12
+- **Total Problems Solved:** 13
 - **Easy:** 11 🟢
-- **Medium:** 1 🟡
+- **Medium:** 2 🟡
 - **Hard:** 0 🔴
 
 ## 📝 Problems
@@ -25,6 +25,7 @@ My LeetCode solutions, automatically synced from [LeetCode](https://leetcode.com
 | [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/submissions/1984131537/) | 🟢 Easy | python3 | 2026-04-21 |
 | [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/) | 🟢 Easy | cpp | 2026-04-18 |
 | [189. Rotate Array](https://leetcode.com/problems/rotate-array/) | 🟡 Medium | cpp | 2026-04-26 |
+| [189. Rotate Array](https://leetcode.com/problems/rotate-array/) | 🟡 Medium | python | 2026-04-26 |
 
 ---
 
