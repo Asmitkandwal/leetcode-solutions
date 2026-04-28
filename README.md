@@ -4,8 +4,8 @@ My LeetCode solutions, automatically synced from [LeetCode](https://leetcode.com
 
 ## 📊 Statistics
 
-- **Total Problems Solved:** 14
-- **Easy:** 12 🟢
+- **Total Problems Solved:** 15
+- **Easy:** 13 🟢
 - **Medium:** 2 🟡
 - **Hard:** 0 🔴
 
@@ -22,6 +22,7 @@ My LeetCode solutions, automatically synced from [LeetCode](https://leetcode.com
 | [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/submissions/1989077124/) | 🟢 Easy | cpp | 2026-04-27 |
 | [3541. Find Most Frequent Vowel and Consonant](https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/submissions/1984985394/) | 🟢 Easy | cpp | 2026-04-22 |
 | [3541. Find Most Frequent Vowel and Consonant](https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/submissions/1984991995/) | 🟢 Easy | python | 2026-04-22 |
+| [485. Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/) | 🟢 Easy | python | 2026-04-28 |
 | [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/submissions/1984125441/) | 🟢 Easy | cpp | 2026-04-21 |
 | [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/submissions/1984131537/) | 🟢 Easy | python3 | 2026-04-21 |
 | [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/) | 🟢 Easy | cpp | 2026-04-18 |
