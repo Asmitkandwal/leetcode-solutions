@@ -4,8 +4,8 @@ My LeetCode solutions, automatically synced from [LeetCode](https://leetcode.com
 
 ## 📊 Statistics
 
-- **Total Problems Solved:** 15
-- **Easy:** 13 🟢
+- **Total Problems Solved:** 16
+- **Easy:** 14 🟢
 - **Medium:** 2 🟡
 - **Hard:** 0 🔴
 
@@ -15,6 +15,7 @@ My LeetCode solutions, automatically synced from [LeetCode](https://leetcode.com
 |---------|-----------|----------|------|
 | [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/submissions/1983644656/) | 🟢 Easy | cpp | 2026-04-20 |
 | [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/submissions/1983655031/) | 🟢 Easy | python | 2026-04-20 |
+| [136. Single Number](https://leetcode.com/problems/single-number/submissions/1996271104/) | 🟢 Easy | cpp | 2026-05-06 |
 | [1512. Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/submissions/1984968239/) | 🟢 Easy | cpp | 2026-04-22 |
 | [1512. Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/) | 🟢 Easy | python | 2026-04-22 |
 | [1752. Check if Array Is Sorted and Rotated](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/submissions/1986687446/) | 🟢 Easy | cpp | 2026-04-24 |
