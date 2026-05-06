@@ -1,25 +1,28 @@
 /*
  * Problem: 136. Single Number
  * Difficulty: Easy
- * Link: https://leetcode.com/problems/single-number/submissions/1996271104/
+ * Link: https://leetcode.com/problems/single-number/
  * Language: cpp
  * Date: 2026-05-06
  */
 
+// OPTIMAL APPROACH USING XOR
+
 class Solution {
 public:
     int singleNumber(vector<int>& nums) {
-        unordered_map<long long , int> mpp;
-        for(int i = 0;i<nums.size();i++){
-            mpp[nums[i]]++;
+
+        int xor_val = 0;
+
+        for (int i = 0; i < nums.size(); i++) {
+
+            // Same numbers cancel each other in XOR
+            // a ^ a = 0
+            // 0 ^ x = x
+            xor_val = xor_val ^ nums[i];
         }
 
-        for(auto i : mpp){
-            if(i.second == 1){
-                return (i.first);
-            }
-        }
-
-        return -1;
+        // Only unique element remains after all cancellations
+        return xor_val;
     }
 };
