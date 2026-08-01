@@ -4,9 +4,9 @@ My LeetCode solutions, automatically synced from [LeetCode](https://leetcode.com
 
 ## 📊 Statistics
 
-- **Total Problems Solved:** 18
+- **Total Problems Solved:** 19
 - **Easy:** 16 🟢
-- **Medium:** 2 🟡
+- **Medium:** 3 🟡
 - **Hard:** 0 🔴
 
 ## 📝 Problems
@@ -29,6 +29,7 @@ My LeetCode solutions, automatically synced from [LeetCode](https://leetcode.com
 | [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/submissions/1984125441/) | 🟢 Easy | cpp | 2026-04-21 |
 | [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/submissions/1984131537/) | 🟢 Easy | python3 | 2026-04-21 |
 | [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/) | 🟢 Easy | cpp | 2026-04-18 |
+| [1283. Find the Smallest Divisor Given a Threshold](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/) | 🟡 Medium | cpp | 2026-08-01 |
 | [189. Rotate Array](https://leetcode.com/problems/rotate-array/) | 🟡 Medium | cpp | 2026-04-26 |
 | [189. Rotate Array](https://leetcode.com/problems/rotate-array/) | 🟡 Medium | python | 2026-04-26 |
 
